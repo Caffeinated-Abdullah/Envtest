@@ -1,10 +1,92 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Caffeinated Vault</title>
+    <link rel="icon" type="image/png" href="CA.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome to the Vault</h1>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+                $.ajax({
+                    url: "/load_more_content",
+                    success: function (data) {
+                        $("#content").append(data);
+                    }
+                });
+            }
+        });
+    </script>
+    <h1 id="Start">Welcome to the Vault<br>Where nothing is a secret<br>And everything is free</h1>
+
+
+    <div id="Own">
+        <p>By <a href="https://www.instagram.com/caffeinated_abdullah/">Caffeinated_Abdullah</a> &
+            <a href="https://www.instagram.com/ammar.alrafee/">Ammar Alrafe'e</a></p>
+    </div>
+
+    <div class="menu-trigger">
+        <span>&#9776; Menu</span>
+        <div class="vertical-menu">
+            <ul>
+                <h3 style="text-align: center;">Menu</h3>
+                <li><a href="#">RoadMaps</a></li>
+                <li><a href="#">Library (PDF/Epub)</a></li>
+                <li><a href="#">CTF</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contain">
+        <div id="Pre" class="boxleft">
+            <h3>Pre-Essential</h3>
+            <p id="text">
+                This is the phase where we prepear ourselves, not for Cybersecurity itself, for starting in IT in
+                generall.
+            </p>
+        </div>
+        <div class="box">
+            <h3 style="text-align: center;">Notes</h3>
+            <p id="text">
+                I know that the material right now might be a little boring, but keep it up, and remember that this is
+                what we
+                will use this information to build up on, so stay focused, stay hungry for information!
+            </p>
+        </div>
+        <div id="Ess" class="boxright">
+            <h3>Essential</h3>
+            <p id="text">
+                This is the phase where we start actully doing security. Here, we will look into some of the basic
+                things.
+            </p>
+        </div>
+    </div>
+    <div class="contain">
+        <div id="Inter" class="boxleft">
+            <h3>Intermediate</h3>
+            <p id="text">
+               This is the Phase where you'll start to actually feel the Cybersecurity in your veins
+               This is where yoy should start doing the actual technical bit.
+            </p>
+        </div>
+        <div id="Adv" class="boxright">
+            <h3>Advanced</h3>
+            <p id="text">
+                This is the phase where we start actully doing security. Here, we will look into some of the basic
+                things.
+            </p>
+        </div>
+    </div>
+
+<div class="contain" ><div class="bigbox" ></div></div>
+
+
 </body>
+
 </html>
