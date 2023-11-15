@@ -6,8 +6,6 @@ body {
   flex-direction: column;
 }
 
-
-
 #Start {
   color: #a72020;
   text-align: center;
@@ -17,14 +15,17 @@ body {
 #Own {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: medium;
-  text-align: center;
+  text-align: right;
   color: #a8a8a8;
-
+  margin-right: 500px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .menu-trigger {
   background-color: #333;
-
+  height: 40px;
+  width: 100px;
   position: fixed;
   left: 0;
   top: 0;
@@ -36,7 +37,6 @@ body {
 
 .vertical-menu {
   display: none;
-  height: 250px;
   background-color: #333;
   width: 200px;
   position: fixed;
@@ -71,12 +71,8 @@ li a:hover {
 
 .contain {
   display: flex;
-  justify-content: center;
   margin-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
-
 
 .boxleft {
   float: left;
@@ -198,36 +194,34 @@ button {
   margin: 5px;
   padding: 10px;
   font-size: 16px;
-  background-color: #b02d28;
+  background-color: #470505;
   color: white;
-  border: none;
+  border: double rgb(128, 6, 6);
   border-radius: 5px;
-  cursor: pointer;
+  cursor: ;
 }
 
 .red-button {
   background-color: red !important;
 }
-
 ul {
-  list-style-type: square;
+  color: #333;
+  list-style-type: circle;
   padding: 10;
-  display: block;
+  display: none;
 }
 
 ul li {
-  margin: 5px 0;
+  margin: 5px;
 }
 
 ul li a {
   text-decoration: none;
-  color: #c50b0b;
+  color: whitesmoke;
 }
-
 .bbb a:hover {
   text-decoration: underline;
 }
-
 @media (max-width: 1035px){
   .contain{
       flex-direction: column;
