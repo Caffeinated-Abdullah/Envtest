@@ -15,7 +15,7 @@ body {
 #Own {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: medium;
-  text-align: right;
+  text-align: center;
   color: #a8a8a8;
   margin-right: 500px;
   margin-bottom: 20px;
@@ -37,6 +37,7 @@ body {
 
 .vertical-menu {
   display: none;
+  height: 250px;
   background-color: #333;
   width: 200px;
   position: fixed;
@@ -71,7 +72,10 @@ li a:hover {
 
 .contain {
   display: flex;
+  justify-content: center;
   margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .boxleft {
@@ -194,71 +198,73 @@ button {
   margin: 5px;
   padding: 10px;
   font-size: 16px;
-  background-color: #470505;
+  background-color: #b02d28;
   color: white;
-  border: double rgb(128, 6, 6);
+  border: none;
   border-radius: 5px;
-  cursor: ;
+  cursor: pointer;
 }
 
 .red-button {
   background-color: red !important;
 }
+
 ul {
-  color: #333;
-  list-style-type: circle;
+  list-style-type: square;
   padding: 10;
-  display: none;
+  display: block;
 }
 
 ul li {
-  margin: 5px;
+  margin: 5px 0;
 }
 
 ul li a {
   text-decoration: none;
-  color: whitesmoke;
+  color: #c50b0b;
 }
+
 .bbb a:hover {
   text-decoration: underline;
 }
-@media (max-width: 1035px){
-  .contain{
-      flex-direction: column;
-      justify-content: center;
-      flex-wrap: nowrap;
-      align-items: center;
-      width: 600px;
-      float: none;
-      margin-top: 10px;
+
+@media (max-width: 1035px) {
+  .contain {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 600px;
+    float: none;
+    margin-top: 10px;
   }
-  .boxleft{
+  .boxleft {
     width: 600px;
     height: 400px;
     float: none;
     margin: 0;
     margin-top: 10px;
   }
-  .box{
+  .box {
     width: 600px;
     height: 400px;
     float: none;
     margin: 0;
     margin-top: 10px;
   }
-  .boxright{
+  .boxright {
     width: 600px;
     height: 400px;
     float: none;
     margin: 0;
     margin-top: 10px;
   }
-  .bigbox{
+  .bigbox {
     width: 600px;
     height: 400px;
     float: none;
     margin: 0;
-    align-self:auto;
+    align-self: auto;
     margin-top: 10px;
   }
 }
